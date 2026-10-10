@@ -24,7 +24,7 @@ Složka `razitka/2026-10-09_2058/`:
 | `SHA256SUMS.freetsa.tsr` | Časové razítko tohoto seznamu od autority FreeTSA (RFC 3161). |
 | `SHA256SUMS.ots` | Časové razítko tohoto seznamu v blockchainu Bitcoinu (OpenTimestamps). |
 
-Razítka DigiCert a FreeTSA nesou čas 9. října 2026, 20:58:30 (18:58:30 UTC). Zápis v blockchainu Bitcoinu je v blocích 970675, 970680 a 970681.
+Razítka DigiCert a FreeTSA nesou čas 9. října 2026, 20:58:30 (18:58:30 UTC). Zápis v blockchainu Bitcoinu je v blocích 970675, 970676, 970680 a 970681, vytěžených v pátek 9. října mezi 22:14 a 23:40.
 
 ## Jak to ověřit
 
