@@ -8,7 +8,7 @@ Otisk je krátký kód vypočítaný z obsahu souboru; když se v souboru změn�
 
 ## K čemu to je
 
-Od soboty si každý může ověřit dvě věci:
+Od soboty 14:01 si každý může ověřit dvě věci:
 
 1. Predikce existovaly v pátek 9. října večer, tedy dřív, než začalo sčítání hlasů.
 2. Soubory, které tu v sobotu zveřejníme, jsou přesně ty, které v pátek dostaly razítko.
@@ -24,7 +24,7 @@ Složka `razitka/2026-10-09_2058/`:
 | `SHA256SUMS.freetsa.tsr` | Časové razítko tohoto seznamu od autority FreeTSA (RFC 3161). |
 | `SHA256SUMS.ots` | Časové razítko tohoto seznamu v blockchainu Bitcoinu (OpenTimestamps). |
 
-Razítka DigiCert a FreeTSA nesou čas 9. října 2026, 20:58:30 (18:58:30 UTC). Zápis do blockchainu následuje s odstupem několika hodin.
+Razítka DigiCert a FreeTSA nesou čas 9. října 2026, 20:58:30 (18:58:30 UTC). Zápis v blockchainu Bitcoinu je v blocích 970675, 970680 a 970681.
 
 ## Jak to ověřit
 
