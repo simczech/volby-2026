@@ -6,20 +6,21 @@ Každá verze tu má vlastní složku a vlastní seznam otisků s časovými raz
 
 | Verze | Soubory | Seznam otisků a razítka |
 |---|---|---|
+| sobota 10. října 2026, 13:39 | `predikce/2026-10-10_1339/` | `razitka/2026-10-10_1339/` |
 | pátek 9. října 2026, 20:58 | `predikce/2026-10-09_2058/` | `razitka/2026-10-09_2058/` |
 
-Pokud predikce do uzavření volebních místností ještě upravíme, přibude tu nová verze s vlastním razítkem. Starší verze zůstanou.
+Sobotní verze je poslední. Od páteční se liší ve třech souborech: v predikcích pro obce Rosička (`forecasts/obec-549941.json`) a Blatnička (`forecasts/obec-586056.json`) a v přehledu `summary.json`. V každé z těchto obcí přišla jedna kandidátní listina po registraci o část kandidátů. Páteční verze s tím v odhadu podílu hlasů této listiny nepočítala, sobotní ano. Ostatních 6&nbsp;415 souborů je stejných. Páteční verze tu zůstává.
 
 ## K čemu to je
 
 Každý si může ověřit dvě věci:
 
-1. Predikce existovaly v pátek 9. října večer, tedy dřív, než začalo sčítání hlasů.
-2. Soubory ve složce `predikce/2026-10-09_2058/` jsou přesně ty, které v pátek dostaly razítko.
+1. Predikce existovaly dřív, než začalo sčítání hlasů: první verze v pátek 9. října ve 20:58, poslední v sobotu 10. října ve 13:39, před uzavřením volebních místností ve 14:00.
+2. Soubory ve složkách `predikce/2026-10-09_2058/` a `predikce/2026-10-10_1339/` jsou přesně ty, které dostaly razítko.
 
 ## Co tu je
 
-Složka `predikce/2026-10-09_2058/`:
+Složka každé verze v `predikce/` obsahuje:
 
 | Soubor | Co to je |
 |---|---|
@@ -29,16 +30,18 @@ Složka `predikce/2026-10-09_2058/`:
 | `manifest.json` | Seznam odhadů a jejich názvy. |
 | `summary.json` | Přehled hlavního odhadu za všechna místa. |
 
-Složka `razitka/2026-10-09_2058/`:
+Složka každé verze v `razitka/` obsahuje:
 
 | Soubor | Co to je |
 |---|---|
-| `SHA256SUMS` | Seznam otisků SHA-256 všech 6&nbsp;418 souborů s predikcemi. |
+| `SHA256SUMS` | Seznam otisků SHA-256 všech 6&nbsp;418 souborů verze. |
 | `SHA256SUMS.digicert.tsr` | Časové razítko tohoto seznamu od autority DigiCert (RFC 3161). |
 | `SHA256SUMS.freetsa.tsr` | Časové razítko tohoto seznamu od autority FreeTSA (RFC 3161). |
 | `SHA256SUMS.ots` | Časové razítko tohoto seznamu v blockchainu Bitcoinu (OpenTimestamps). |
 
-Razítka DigiCert a FreeTSA nesou čas 9. října 2026, 20:58:30 (18:58:30 UTC). Zápis v blockchainu Bitcoinu je v blocích 970675, 970676, 970680 a 970681, vytěžených v pátek 9. října mezi 22:14 a 23:40.
+Páteční verze: razítka DigiCert a FreeTSA nesou čas 9. října 2026, 20:58:30 (18:58:30 UTC). Zápis v blockchainu Bitcoinu je v blocích 970675, 970676, 970680 a 970681, vytěžených v pátek 9. října mezi 22:14 a 23:40.
+
+Sobotní verze: razítko FreeTSA nese čas 10. října 2026, 13:39:31 (11:39:31 UTC), razítko DigiCert 13:39:32 (11:39:32 UTC). Zápis do blockchainu Bitcoinu trvá obvykle několik hodin; soubor `SHA256SUMS.ots` této verze ho zatím neobsahuje, doplníme ho později. Čas před 14:00 dokládají razítka FreeTSA a DigiCert.
 
 ## Co je v souborech
 
@@ -69,22 +72,24 @@ Položka `turnout` obsahuje odhad volební účasti v procentech (`mean`) a jeho
 
 ## Jak to ověřit
 
+Příkazy jsou pro poslední verzi; u starší stačí změnit název složky.
+
 Shoda souborů se seznamem otisků:
 
 ```sh
-cd predikce/2026-10-09_2058
-shasum -a 256 -c ../../razitka/2026-10-09_2058/SHA256SUMS
+cd predikce/2026-10-10_1339
+shasum -a 256 -c ../../razitka/2026-10-10_1339/SHA256SUMS
 ```
 
 U každého souboru musí být `OK`.
 
-Kdy razítko vzniklo a co bylo orazítkováno:
+Kdy razítko vzniklo a co bylo orazítkováno (z kořenové složky repozitáře):
 
 ```sh
-openssl ts -reply -in razitka/2026-10-09_2058/SHA256SUMS.digicert.tsr -text
-shasum -a 256 razitka/2026-10-09_2058/SHA256SUMS
+openssl ts -reply -in razitka/2026-10-10_1339/SHA256SUMS.digicert.tsr -text
+shasum -a 256 razitka/2026-10-10_1339/SHA256SUMS
 ```
 
 Řádek `Time stamp` je čas razítka v UTC. Údaj `Message data` je otisk seznamu; musí být stejný jako otisk z druhého příkazu. `openssl` ho vypisuje po dvojicích znaků na dvou řádcích, `shasum` vcelku.
 
-Pravost razítka ověří příkaz `openssl ts -verify` (OpenSSL 3) podle kořenového certifikátu autority. Zápis v blockchainu ověří příkaz `ots verify` nebo ověřovač na [opentimestamps.org](https://opentimestamps.org).
+Pravost razítka ověří příkaz `openssl ts -verify` (OpenSSL 3) podle kořenového certifikátu autority. Zápis v blockchainu ověří příkaz `ots verify` nebo ověřovač na [opentimestamps.org](https://opentimestamps.org) (u sobotní verze až po doplnění zápisu).
