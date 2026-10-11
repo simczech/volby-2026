@@ -1,6 +1,6 @@
 # Simczech: predikce pro volby 2026
 
-Predikce Simczech pro komunální a senátní volby 9. a 10. října 2026. Poslední verze je ta, kterou právě zobrazuje [simczech.cz](https://simczech.cz).
+Predikce Simczech pro komunální a senátní volby 9. a 10. října 2026. Poslední verze je ta, kterou právě zobrazuje [simczech.cz](https://simczech.cz/volby-2026/).
 
 Každá verze tu má vlastní složku a vlastní seznam otisků s časovými razítky. Otisk je krátký kód vypočítaný z obsahu souboru; když se v souboru změní jediný znak, vyjde jiný otisk.
 
