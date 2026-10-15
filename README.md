@@ -1,6 +1,6 @@
 # Simczech: predikce pro volby 2026
 
-Predikce Simczech pro komunální a senátní volby 9. a 10. října 2026. Poslední verze je ta, kterou právě zobrazuje [simczech.cz](https://simczech.cz/volby-2026/).
+Predikce Simczech pro komunální a senátní volby 9. a 10. října 2026 a pro druhé kolo senátních voleb 16. a&nbsp;17.&nbsp;října 2026 (oddíl „Senát, 2. kolo“ níže). Poslední verze je ta, kterou právě zobrazuje [simczech.cz](https://simczech.cz/volby-2026/).
 
 Každá verze tu má vlastní složku a vlastní seznam otisků s časovými razítky. Otisk je krátký kód vypočítaný z obsahu souboru; když se v souboru změní jediný znak, vyjde jiný otisk.
 
@@ -10,6 +10,36 @@ Každá verze tu má vlastní složku a vlastní seznam otisků s časovými raz
 | pátek 9. října 2026, 20:58 | `predikce/2026-10-09_2058/` | `razitka/2026-10-09_2058/` |
 
 Sobotní verze je poslední. Od páteční se liší ve třech souborech: v predikcích pro obce Rosička (`forecasts/obec-549941.json`) a Blatnička (`forecasts/obec-586056.json`) a v přehledu `summary.json`. V každé z těchto obcí přišla jedna kandidátní listina po registraci o část kandidátů. Páteční verze s tím v odhadu podílu hlasů této listiny nepočítala, sobotní ano. Ostatních 6&nbsp;415 souborů je stejných. Páteční verze tu zůstává.
+
+## Senát, 2. kolo (16. a&nbsp;17.&nbsp;října 2026)
+
+Odhad druhého kola senátních voleb ve 22 obvodech, ve kterých se o&nbsp;senátorovi rozhoduje ve druhém kole. Každá verze je jeden soubor `runoff.json` s&nbsp;vlastním seznamem otisků a&nbsp;časovými razítky.
+
+| Verze | Soubor | Seznam otisků a&nbsp;razítka |
+|---|---|---|
+| čtvrtek 15.&nbsp;října 2026, 14:44 | `predikce/senat-2-kolo/2026-10-15_1444/runoff.json` | `razitka/senat-2-kolo/2026-10-15_1444/` |
+| pondělí 12.&nbsp;října 2026, 0:18 | `predikce/senat-2-kolo/2026-10-12_0018/runoff.json` | `razitka/senat-2-kolo/2026-10-12_0018/` |
+
+Čtvrteční verze je poslední a&nbsp;zobrazuje ji [simczech.cz](https://simczech.cz/volby-2026/senat/2-kolo). Pondělní verzi web zobrazoval od 12. do 15.&nbsp;října. Její razítko vzniklo 15.&nbsp;října ve 13:22, tedy také před druhým kolem; dokládá, že soubor existoval před hlasováním, ne odkdy byl na webu.
+
+| Položka | Význam |
+|---|---|
+| `districts.senat-<číslo obvodu>` | Jeden senátní obvod. |
+| `pair` | Dva kandidáti druhého kola; první z&nbsp;nich je tip podle odhadu. |
+| `chance` | Šance na zvolení (0 až 1). |
+| `share` | Odhad podílu hlasů ve druhém kole v&nbsp;procentech. |
+| `low`, `high` | Rozmezí tohoto odhadu (80&nbsp;%). |
+| `turnout` | Odhad účasti ve druhém kole v&nbsp;procentech (`r2`) a&nbsp;jeho rozmezí (`low`, `high`). |
+| `summary.seats` | Očekávaný počet senátorů podle stran (průměr a&nbsp;rozmezí), včetně pěti zvolených už v&nbsp;prvním kole. |
+| `summary.expectedCorrect` | Očekávaný počet správných tipů z&nbsp;22 a&nbsp;jeho rozmezí. |
+
+Ověření poslední verze:
+
+```sh
+cd predikce/senat-2-kolo/2026-10-15_1444
+shasum -a 256 -c ../../../razitka/senat-2-kolo/2026-10-15_1444/SHA256SUMS
+openssl ts -reply -in ../../../razitka/senat-2-kolo/2026-10-15_1444/SHA256SUMS.digicert.tsr -text
+```
 
 ## K čemu to je
 
