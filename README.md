@@ -17,11 +17,12 @@ Odhad druhého kola senátních voleb ve 22 obvodech, ve kterých se o&nbsp;sen�
 
 | Verze | Soubor | Seznam otisků a&nbsp;razítka |
 |---|---|---|
+| pátek 16.&nbsp;října 2026, 12:33 | `predikce/senat-2-kolo/2026-10-16_1233/runoff.json` | `razitka/senat-2-kolo/2026-10-16_1233/` |
 | pátek 16.&nbsp;října 2026, 0:46 | `predikce/senat-2-kolo/2026-10-16_0046/runoff.json` | `razitka/senat-2-kolo/2026-10-16_0046/` |
 | čtvrtek 15.&nbsp;října 2026, 14:44 | `predikce/senat-2-kolo/2026-10-15_1444/runoff.json` | `razitka/senat-2-kolo/2026-10-15_1444/` |
 | pondělí 12.&nbsp;října 2026, 0:18 | `predikce/senat-2-kolo/2026-10-12_0018/runoff.json` | `razitka/senat-2-kolo/2026-10-12_0018/` |
 
-Páteční verze je poslední a&nbsp;používá ji [simczech.cz](https://simczech.cz/volby-2026/senat/2-kolo). Odhady všech 22 soubojů má stejné jako čtvrteční verze, navíc obsahuje odhad účasti ve všech 22&nbsp;obvodech dohromady (`summary.turnout`). Čtvrteční verzi web používal od 15. do 16.&nbsp;října. Pondělní verzi web zobrazoval od 12. do 15.&nbsp;října. Její razítko vzniklo 15.&nbsp;října ve 13:22, tedy také před druhým kolem; dokládá, že soubor existoval před hlasováním, ne odkdy byl na webu.
+Poslední je páteční verze vydaná ve&nbsp;12:33; používá ji [simczech.cz](https://simczech.cz/volby-2026/senat/2-kolo). Nahradila verzi vydanou v&nbsp;0:46, kterou web používal ráno 16.&nbsp;října. Odhady 22&nbsp;soubojů i&nbsp;účasti zůstaly stejné; navíc uvádí rozmezí počtu senátorů podle stran vymezené prostřední polovinou simulací (`summary.seats[].low50`, `high50`). Verze vydaná v&nbsp;0:46 přidala ke čtvrteční verzi pouze odhad celkové účasti ve 22&nbsp;obvodech (`summary.turnout`). Čtvrteční verzi web používal od 15. do 16.&nbsp;října, pondělní od 12. do 15.&nbsp;října. Razítko pondělní verze vzniklo 15.&nbsp;října ve&nbsp;13:22; dokládá existenci souboru před hlasováním, ne dobu zveřejnění.
 
 | Položka | Význam |
 |---|---|
@@ -33,14 +34,15 @@ Páteční verze je poslední a&nbsp;používá ji [simczech.cz](https://simczec
 | `turnout` | Odhad účasti ve druhém kole v&nbsp;procentech (`r2`) a&nbsp;jeho rozmezí (`low`, `high`). |
 | `summary.seats` | Očekávaný počet senátorů podle stran (průměr a&nbsp;rozmezí), včetně pěti zvolených už v&nbsp;prvním kole. |
 | `summary.expectedCorrect` | Očekávaný počet správných tipů z&nbsp;22 a&nbsp;jeho rozmezí. |
-| `summary.turnout` | Odhad účasti ve všech 22&nbsp;obvodech dohromady v&nbsp;procentech (`r2`) a&nbsp;jeho rozmezí (`low`, `high`); `registered` je počet zapsaných voličů v&nbsp;těchto obvodech v&nbsp;1.&nbsp;kole. Jen v&nbsp;páteční verzi. |
+| `summary.turnout` | Odhad účasti ve všech 22&nbsp;obvodech dohromady v&nbsp;procentech (`r2`) a&nbsp;jeho rozmezí (`low`, `high`); `registered` je počet zapsaných voličů v&nbsp;těchto obvodech v&nbsp;1.&nbsp;kole. Od páteční verze vydané v&nbsp;0:46. |
+| `summary.seats[].low50`, `high50` | Rozmezí počtu senátorů dané strany vymezené prostřední polovinou simulací. Od páteční verze vydané ve&nbsp;12:33. |
 
 Ověření poslední verze:
 
 ```sh
-cd predikce/senat-2-kolo/2026-10-16_0046
-shasum -a 256 -c ../../../razitka/senat-2-kolo/2026-10-16_0046/SHA256SUMS
-openssl ts -reply -in ../../../razitka/senat-2-kolo/2026-10-16_0046/SHA256SUMS.digicert.tsr -text
+cd predikce/senat-2-kolo/2026-10-16_1233
+shasum -a 256 -c ../../../razitka/senat-2-kolo/2026-10-16_1233/SHA256SUMS
+openssl ts -reply -in ../../../razitka/senat-2-kolo/2026-10-16_1233/SHA256SUMS.digicert.tsr -text
 ```
 
 ## K čemu to je
