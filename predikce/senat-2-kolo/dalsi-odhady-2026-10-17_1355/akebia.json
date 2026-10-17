@@ -1,0 +1,478 @@
+{
+  "schema": 1,
+  "name": "Simczech Akebia",
+  "id": "akebia",
+  "generatedAt": "2026-10-15T14:35:14+02:00",
+  "sourceTime": "2026-10-11T07:01:22+02:00",
+  "note": "Odhad 2. kola vytvořený před hlasováním; jiný než hlavní odhad Simczech Original. Obsahuje jen odhad podílu hlasů.",
+  "districts": {
+    "senat-3": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 1,
+          "name": "Miroslav Plevný",
+          "party": "STAN",
+          "family": "stan",
+          "share": 55.82808709005725
+        },
+        {
+          "no": 4,
+          "name": "Sandra Tsoukernik",
+          "party": "ANO",
+          "family": "ano",
+          "share": 44.17191290994275
+        }
+      ]
+    },
+    "senat-6": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 5,
+          "name": "Ivo Trešl",
+          "party": "STAN",
+          "family": "stan",
+          "share": 57.18620504015733
+        },
+        {
+          "no": 6,
+          "name": "Jaroslav Mikoláš",
+          "party": "ANO",
+          "family": "ano",
+          "share": 42.81379495984267
+        }
+      ]
+    },
+    "senat-9": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 5,
+          "name": "Karel Řehka",
+          "party": "STAN",
+          "family": "stan",
+          "share": 54.75877778918028
+        },
+        {
+          "no": 7,
+          "name": "Lucie Kantorová",
+          "party": "ANO",
+          "family": "ano",
+          "share": 45.24122221081972
+        }
+      ]
+    },
+    "senat-15": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 3,
+          "name": "Ladislav Med",
+          "party": "ODS",
+          "family": "ods",
+          "share": 50.825961240583325
+        },
+        {
+          "no": 5,
+          "name": "Michal Kozár",
+          "party": "ANO",
+          "family": "ano",
+          "share": 49.174038759416675
+        }
+      ]
+    },
+    "senat-18": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 1,
+          "name": "Petr Štěpánek",
+          "party": "STAN",
+          "family": "stan",
+          "share": 60.74341098841459
+        },
+        {
+          "no": 2,
+          "name": "Barbora Daňhová",
+          "party": "ANO",
+          "family": "ano",
+          "share": 39.25658901158541
+        }
+      ]
+    },
+    "senat-21": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 6,
+          "name": "Radko Sáblík",
+          "party": "ODS",
+          "family": "ods",
+          "share": 51.49277681480178
+        },
+        {
+          "no": 3,
+          "name": "Václav Láska",
+          "party": "SEN 21",
+          "family": "regional",
+          "share": 48.50722318519822
+        }
+      ]
+    },
+    "senat-24": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 2,
+          "name": "David Smoljak",
+          "party": "STAN",
+          "family": "stan",
+          "share": 63.31844410046999
+        },
+        {
+          "no": 5,
+          "name": "Dagmar Pecková",
+          "party": "ODS",
+          "family": "ods",
+          "share": 36.68155589953001
+        }
+      ]
+    },
+    "senat-27": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 7,
+          "name": "Jiří Padevět",
+          "party": "STAN",
+          "family": "stan",
+          "share": 63.031050868971604
+        },
+        {
+          "no": 8,
+          "name": "Jan Čižinský",
+          "party": "PRAHA SOBĚ",
+          "family": "regional",
+          "share": 36.968949131028396
+        }
+      ]
+    },
+    "senat-30": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 5,
+          "name": "Petr Paták",
+          "party": "ODS",
+          "family": "ods",
+          "share": 52.716639071008146
+        },
+        {
+          "no": 2,
+          "name": "Adéla Sucharda Šípová",
+          "party": "Piráti",
+          "family": "pirati",
+          "share": 47.283360928991854
+        }
+      ]
+    },
+    "senat-36": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 5,
+          "name": "Martin Půta",
+          "party": "SLK",
+          "family": "stan",
+          "share": 50.88826212619357
+        },
+        {
+          "no": 3,
+          "name": "Jitka Volfová",
+          "party": "ANO",
+          "family": "ano",
+          "share": 49.11173787380643
+        }
+      ]
+    },
+    "senat-42": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 7,
+          "name": "Michael Kašpar",
+          "party": "STAN",
+          "family": "stan",
+          "share": 64.70409113814296
+        },
+        {
+          "no": 1,
+          "name": "Andrea Brzobohatá",
+          "party": "ANO",
+          "family": "ano",
+          "share": 35.29590886185704
+        }
+      ]
+    },
+    "senat-45": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 6,
+          "name": "Zuzana Ceralová Petrofová",
+          "party": "ODS",
+          "family": "ods",
+          "share": 57.40394982486191
+        },
+        {
+          "no": 7,
+          "name": "Martin Dvořák",
+          "party": "STAN",
+          "family": "stan",
+          "share": 42.59605017513809
+        }
+      ]
+    },
+    "senat-51": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 3,
+          "name": "Michal Šmarda",
+          "party": "Volt",
+          "family": "regional",
+          "share": 52.17405907995153
+        },
+        {
+          "no": 2,
+          "name": "Josef Klement",
+          "party": "KDU-ČSL",
+          "family": "kdu",
+          "share": 47.82594092004847
+        }
+      ]
+    },
+    "senat-54": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 2,
+          "name": "Tomáš Třetina",
+          "party": "TOP 09",
+          "family": "top09",
+          "share": 52.96219331926919
+        },
+        {
+          "no": 3,
+          "name": "Jiří Kyněra",
+          "party": "ANO",
+          "family": "ano",
+          "share": 47.03780668073081
+        }
+      ]
+    },
+    "senat-60": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 1,
+          "name": "Zdeněk Papoušek",
+          "party": "ODS",
+          "family": "ods",
+          "share": 56.42176911098073
+        },
+        {
+          "no": 5,
+          "name": "Karel Zitterbart",
+          "party": "STAN",
+          "family": "stan",
+          "share": 43.57823088901927
+        }
+      ]
+    },
+    "senat-63": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 2,
+          "name": "Petr Vrána",
+          "party": "ANO",
+          "family": "ano",
+          "share": 53.6777042169448
+        },
+        {
+          "no": 3,
+          "name": "Jakub Navařík",
+          "party": "ODS",
+          "family": "ods",
+          "share": 46.3222957830552
+        }
+      ]
+    },
+    "senat-66": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 5,
+          "name": "Marek Ošťádal",
+          "party": "24/7",
+          "family": "regional",
+          "share": 54.52144386416042
+        },
+        {
+          "no": 3,
+          "name": "Martin Škurek",
+          "party": "ANO",
+          "family": "ano",
+          "share": 45.47855613583958
+        }
+      ]
+    },
+    "senat-69": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 6,
+          "name": "Helena Pešatová",
+          "party": "STAN",
+          "family": "stan",
+          "share": 50.52102512393236
+        },
+        {
+          "no": 2,
+          "name": "Petr Korč",
+          "party": "NMFM",
+          "family": "regional",
+          "share": 49.47897487606764
+        }
+      ]
+    },
+    "senat-72": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 3,
+          "name": "Ondřej Šimetka",
+          "party": "ODS",
+          "family": "ods",
+          "share": 57.22850495540544
+        },
+        {
+          "no": 4,
+          "name": "Lucie Baránková Vilamová",
+          "party": "ANO",
+          "family": "ano",
+          "share": 42.77149504459456
+        }
+      ]
+    },
+    "senat-75": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 5,
+          "name": "Lenka Brzyszkowská",
+          "party": "ANO",
+          "family": "ano",
+          "share": 59.96580293903939
+        },
+        {
+          "no": 7,
+          "name": "Petr Kazík",
+          "party": "OK",
+          "family": "regional",
+          "share": 40.03419706096061
+        }
+      ]
+    },
+    "senat-78": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 2,
+          "name": "Tomáš Goláň",
+          "party": "ODS",
+          "family": "ods",
+          "share": 53.60586747792164
+        },
+        {
+          "no": 5,
+          "name": "Ivo Mitáček",
+          "party": "STAN",
+          "family": "stan",
+          "share": 46.39413252207836
+        }
+      ]
+    },
+    "senat-81": {
+      "state": "runoff",
+      "pair": [
+        {
+          "no": 6,
+          "name": "Josef Bazala",
+          "party": "KDU-ČSL",
+          "family": "kdu",
+          "share": 58.340245539864895
+        },
+        {
+          "no": 4,
+          "name": "Jiří Vašica",
+          "party": "ANO",
+          "family": "ano",
+          "share": 41.659754460135105
+        }
+      ]
+    },
+    "senat-12": {
+      "state": "elected",
+      "elected": {
+        "no": 2,
+        "name": "Tomáš Fiala",
+        "party": "NČ",
+        "family": "regional",
+        "share": 55.4
+      }
+    },
+    "senat-33": {
+      "state": "elected",
+      "elected": {
+        "no": 3,
+        "name": "Zbyněk Linhart",
+        "party": "STAN",
+        "family": "stan",
+        "share": 52.2
+      }
+    },
+    "senat-39": {
+      "state": "elected",
+      "elected": {
+        "no": 2,
+        "name": "Jan Sobotka",
+        "party": "STAN",
+        "family": "stan",
+        "share": 58.4
+      }
+    },
+    "senat-48": {
+      "state": "elected",
+      "elected": {
+        "no": 2,
+        "name": "Jan Grulich",
+        "party": "TOP 09",
+        "family": "top09",
+        "share": 62.2
+      }
+    },
+    "senat-57": {
+      "state": "elected",
+      "elected": {
+        "no": 2,
+        "name": "Jan Grolich",
+        "party": "KDU-ČSL",
+        "family": "kdu",
+        "share": 63.3
+      }
+    }
+  }
+}

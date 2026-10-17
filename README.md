@@ -37,7 +37,7 @@ Poslední je páteční verze vydaná ve&nbsp;12:33; používá ji [simczech.cz]
 | `summary.turnout` | Odhad účasti ve všech 22&nbsp;obvodech dohromady v&nbsp;procentech (`r2`) a&nbsp;jeho rozmezí (`low`, `high`); `registered` je počet zapsaných voličů v&nbsp;těchto obvodech v&nbsp;1.&nbsp;kole. Od páteční verze vydané v&nbsp;0:46. |
 | `summary.seats[].low50`, `high50` | Rozmezí počtu senátorů dané strany vymezené prostřední polovinou simulací. Od páteční verze vydané ve&nbsp;12:33. |
 
-### Další odhady (sobota 17.&nbsp;října 2026, 13:51)
+### Další odhady (sobota 17.&nbsp;října 2026, 13:51 a&nbsp;13:55)
 
 Čtyři další odhady druhého kola, jiné než hlavní Simczech Original. Vznikly ve čtvrtek před hlasováním; časové razítko mají ze soboty 13:51, tedy z&nbsp;doby před uzavřením volebních místností ve&nbsp;14:00. Web je nezobrazuje.
 
@@ -48,7 +48,15 @@ Poslední je páteční verze vydaná ve&nbsp;12:33; používá ji [simczech.cz]
 | Simczech Mangostana | `predikce/senat-2-kolo/dalsi-odhady-2026-10-17_1351/mangostana.json` |
 | Simczech Sapote | `predikce/senat-2-kolo/dalsi-odhady-2026-10-17_1351/sapote.json` |
 
-Seznam otisků a&nbsp;razítka jsou v&nbsp;`razitka/senat-2-kolo/dalsi-odhady-2026-10-17_1351/`. Položky souborů mají stejný význam jako v&nbsp;`runoff.json`; souhrn za všechny obvody (`summary`) neobsahují.
+Seznam otisků a&nbsp;razítka jsou v&nbsp;`razitka/senat-2-kolo/dalsi-odhady-2026-10-17_1351/`.
+
+Ve&nbsp;13:55 přibyly další dva odhady, rovněž vytvořené ve čtvrtek před hlasováním; Simczech Akebia obsahuje jen odhad podílu hlasů. Seznam otisků a&nbsp;razítka jsou v&nbsp;`razitka/senat-2-kolo/dalsi-odhady-2026-10-17_1355/`.
+
+| Odhad | Soubor |
+|---|---|
+| Simczech Akebia | `predikce/senat-2-kolo/dalsi-odhady-2026-10-17_1355/akebia.json` |
+| Simczech Bilimbi | `predikce/senat-2-kolo/dalsi-odhady-2026-10-17_1355/bilimbi.json` |
+ Položky souborů mají stejný význam jako v&nbsp;`runoff.json`; souhrn za všechny obvody (`summary`) neobsahují.
 
 Ověření poslední verze:
 
