@@ -56,9 +56,10 @@ Ve&nbsp;13:55 přibyly další dva odhady, rovněž vytvořené ve čtvrtek pře
 |---|---|
 | Simczech Akebia | `predikce/senat-2-kolo/dalsi-odhady-2026-10-17_1355/akebia.json` |
 | Simczech Bilimbi | `predikce/senat-2-kolo/dalsi-odhady-2026-10-17_1355/bilimbi.json` |
- Položky souborů mají stejný význam jako v&nbsp;`runoff.json`; souhrn za všechny obvody (`summary`) neobsahují.
 
-Ověření poslední verze:
+Položky souborů mají stejný význam jako v&nbsp;`runoff.json`. Soubory neobsahují souhrn za všechny obvody (`summary`).
+
+Ověření poslední verze hlavního odhadu Simczech Original (pátek 16.&nbsp;října 2026, 12:33):
 
 ```sh
 cd predikce/senat-2-kolo/2026-10-16_1233
