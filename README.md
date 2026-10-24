@@ -1,6 +1,6 @@
 # Simczech: predikce pro volby 2026
 
-Predikce Simczech pro komunální a senátní volby 9. a 10. října 2026 a pro druhé kolo senátních voleb 16. a&nbsp;17.&nbsp;října 2026 (oddíl „Senát, 2. kolo“ níže). Poslední verze je ta, kterou právě zobrazuje [simczech.cz](https://simczech.cz/volby-2026/).
+Predikce Simczech pro komunální a&nbsp;senátní volby 9. a&nbsp;10.&nbsp;října 2026 a&nbsp;pro druhé kolo senátních voleb 16. a&nbsp;17.&nbsp;října 2026 (oddíl „Senát, 2.&nbsp;kolo“ níže). Poslední verze je ta, kterou právě zobrazuje [simczech.cz](https://simczech.cz/volby-2026/). Jsou tu také odhady výsledku volby primátora Bratislavy 24.&nbsp;října 2026 (oddíl „Bratislava, primátor“ níže); vznikly až během sčítání hlasů a&nbsp;web je nezobrazuje.
 
 Každá verze tu má vlastní složku a vlastní seznam otisků s časovými razítky. Otisk je krátký kód vypočítaný z obsahu souboru; když se v souboru změní jediný znak, vyjde jiný otisk.
 
@@ -10,6 +10,40 @@ Každá verze tu má vlastní složku a vlastní seznam otisků s časovými raz
 | pátek 9. října 2026, 20:58 | `predikce/2026-10-09_2058/` | `razitka/2026-10-09_2058/` |
 
 Sobotní verze je poslední. Od páteční se liší ve třech souborech: v predikcích pro obce Rosička (`forecasts/obec-549941.json`) a Blatnička (`forecasts/obec-586056.json`) a v přehledu `summary.json`. V každé z těchto obcí přišla jedna kandidátní listina po registraci o část kandidátů. Páteční verze s tím v odhadu podílu hlasů této listiny nepočítala, sobotní ano. Ostatních 6&nbsp;415 souborů je stejných. Páteční verze tu zůstává.
+
+## Bratislava, primátor (24.&nbsp;října 2026)
+
+Odhady výsledku volby primátora Bratislavy 24.&nbsp;října 2026 vznikly až po uzavření volebních místností ve&nbsp;20:00, během sčítání hlasů; nejde tedy o&nbsp;předvolební predikce. Odhady směly vycházet jen ze zdrojů zveřejněných před 20:00, bez exit pollu a&nbsp;bez průběžných výsledků sčítání. Před vydáním odhadů jsme použité zdroje zkontrolovali. Časová razítka dokládají, že soubor existoval už v&nbsp;čase, který je na nich uveden.
+
+| Verze | Soubor | Seznam otisků a&nbsp;razítka |
+|---|---|---|
+| sobota 24.&nbsp;října 2026, 21:02 | `predikce/bratislava-primator/2026-10-24_2102/odhady.json` | `razitka/bratislava-primator/2026-10-24_2102/` |
+
+Hlavní odhad Simczech Original&nbsp;👑:
+
+| Kandidát | Podíl platných hlasů | Rozmezí (80&nbsp;%) | Šance na zvolení |
+|---|---|---|---|
+| Matúš Vallo | 56,8&nbsp;% | 46,0–67,2&nbsp;% | 87&nbsp;% |
+| Jozef Ráž | 37,9&nbsp;% | 27,3–48,4&nbsp;% | 13&nbsp;% |
+| Zuzana Šubová | 3,5&nbsp;% | 1,6–6,2&nbsp;% | 0&nbsp;% |
+| Ľubomír Geci | 1,8&nbsp;% | 0,7–3,5&nbsp;% | 0&nbsp;% |
+
+Ve stejném souboru jsou další tři odhady: Simczech Longan, Simczech Feijoa a&nbsp;Simczech Lucuma.
+
+| Položka | Význam |
+|---|---|
+| `methods.<odhad>.candidates.<jméno>.share` | Odhad podílu platných hlasů v&nbsp;procentech. |
+| `low`, `high` | Rozmezí tohoto odhadu (80&nbsp;%). |
+| `win` | Šance, že kandidát získá nejvíc hlasů a&nbsp;bude zvolen (0 až 1). |
+| `turnout` | Odhad volební účasti v&nbsp;procentech. |
+
+Ověření:
+
+```sh
+cd predikce/bratislava-primator/2026-10-24_2102
+shasum -a 256 -c ../../../razitka/bratislava-primator/2026-10-24_2102/SHA256SUMS
+openssl ts -reply -in ../../../razitka/bratislava-primator/2026-10-24_2102/SHA256SUMS.digicert.tsr -text
+```
 
 ## Senát, 2. kolo (16. a&nbsp;17.&nbsp;října 2026)
 
@@ -69,7 +103,7 @@ openssl ts -reply -in ../../../razitka/senat-2-kolo/2026-10-16_1233/SHA256SUMS.d
 
 ## K čemu to je
 
-Každý si může ověřit dvě věci:
+U predikcí komunálních a&nbsp;senátních voleb 9. a&nbsp;10.&nbsp;října si každý může ověřit dvě věci:
 
 1. Predikce existovaly dřív, než začalo sčítání hlasů: první verze v pátek 9. října ve 20:58, poslední v sobotu 10. října ve 13:39, před uzavřením volebních místností ve 14:00.
 2. Soubory ve složkách `predikce/2026-10-09_2058/` a `predikce/2026-10-10_1339/` jsou přesně ty, které dostaly razítko.

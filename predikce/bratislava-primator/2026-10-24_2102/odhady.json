@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "election": "Voľba primátora hlavného mesta Slovenskej republiky Bratislavy, 24. 10. 2026",
+  "generatedAt": "2026-10-24T21:02:19+02:00",
+  "note": "Odhady vznikly až po uzavření volebních místností ve 20:00, během sčítání hlasů. Směly vycházet jen ze zdrojů zveřejněných před 20:00, bez exit pollu a bez průběžných výsledků sčítání.",
+  "main": "original",
+  "candidates": [
+    {
+      "name": "Matúš Vallo"
+    },
+    {
+      "name": "Jozef Ráž"
+    },
+    {
+      "name": "Zuzana Šubová"
+    },
+    {
+      "name": "Ľubomír Geci"
+    }
+  ],
+  "methods": {
+    "original": {
+      "name": "Simczech Original 👑",
+      "candidates": {
+        "Matúš Vallo": {
+          "share": 56.8,
+          "low": 46.0,
+          "high": 67.2,
+          "win": 0.869
+        },
+        "Jozef Ráž": {
+          "share": 37.9,
+          "low": 27.3,
+          "high": 48.4,
+          "win": 0.131
+        },
+        "Zuzana Šubová": {
+          "share": 3.5,
+          "low": 1.6,
+          "high": 6.2,
+          "win": 0.0
+        },
+        "Ľubomír Geci": {
+          "share": 1.8,
+          "low": 0.7,
+          "high": 3.5,
+          "win": 0.0
+        }
+      },
+      "turnout": 39.6
+    },
+    "longan": {
+      "name": "Simczech Longan",
+      "candidates": {
+        "Matúš Vallo": {
+          "share": 62.8,
+          "low": 47.6,
+          "high": 78.0,
+          "win": 0.887
+        },
+        "Jozef Ráž": {
+          "share": 34.0,
+          "low": 18.9,
+          "high": 49.2,
+          "win": 0.113
+        },
+        "Zuzana Šubová": {
+          "share": 2.1,
+          "low": 0.6,
+          "high": 4.2,
+          "win": 0.0
+        },
+        "Ľubomír Geci": {
+          "share": 1.1,
+          "low": 0.3,
+          "high": 2.1,
+          "win": 0.0
+        }
+      },
+      "turnout": 38.8
+    },
+    "feijoa": {
+      "name": "Simczech Feijoa",
+      "candidates": {
+        "Matúš Vallo": {
+          "share": 54.4,
+          "low": 44.3,
+          "high": 63.2,
+          "win": 0.804
+        },
+        "Jozef Ráž": {
+          "share": 41.3,
+          "low": 31.9,
+          "high": 50.7,
+          "win": 0.196
+        },
+        "Zuzana Šubová": {
+          "share": 2.9,
+          "low": 1.4,
+          "high": 5.8,
+          "win": 0.0
+        },
+        "Ľubomír Geci": {
+          "share": 1.4,
+          "low": 0.6,
+          "high": 3.2,
+          "win": 0.0
+        }
+      },
+      "turnout": 40.9
+    },
+    "lucuma": {
+      "name": "Simczech Lucuma",
+      "candidates": {
+        "Matúš Vallo": {
+          "share": 53.3,
+          "low": 46.0,
+          "high": 60.5,
+          "win": 0.915
+        },
+        "Jozef Ráž": {
+          "share": 38.2,
+          "low": 31.1,
+          "high": 45.5,
+          "win": 0.085
+        },
+        "Zuzana Šubová": {
+          "share": 5.4,
+          "low": 2.7,
+          "high": 8.6,
+          "win": 0.0
+        },
+        "Ľubomír Geci": {
+          "share": 3.1,
+          "low": 1.3,
+          "high": 5.2,
+          "win": 0.0
+        }
+      },
+      "turnout": 39.0
+    }
+  },
+  "actual": null
+}
