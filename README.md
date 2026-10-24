@@ -45,31 +45,31 @@ shasum -a 256 -c ../../../razitka/bratislava-primator/2026-10-24_2102/SHA256SUMS
 openssl ts -reply -in ../../../razitka/bratislava-primator/2026-10-24_2102/SHA256SUMS.digicert.tsr -text
 ```
 
-### Živý odhad konečného výsledku (sobota 24.&nbsp;října 2026, 21:36)
+### Živý odhad konečného výsledku
 
-Živý odhad vznikl během sčítání hlasů a&nbsp;na rozdíl od odhadů výše vychází i&nbsp;z&nbsp;exit pollu; nejde tedy o&nbsp;predikci. Použité údaje odpovídají stavu k&nbsp;21:30; průběžné výsledky sčítání ještě nebyly k&nbsp;dispozici. Časová razítka dokládají, že soubor existoval už v&nbsp;čase, který je na nich uveden.
+Živé odhady vznikly během sčítání hlasů a&nbsp;na rozdíl od odhadů výše vycházejí i&nbsp;z&nbsp;exit pollu, novější verze také z&nbsp;průběžných výsledků sčítání; nejde tedy o&nbsp;predikce. Každá verze má vlastní soubor, seznam otisků a&nbsp;časová razítka. Časová razítka dokládají, že soubor existoval už v&nbsp;čase, který je na nich uveden.
 
-| Verze | Soubor | Seznam otisků a&nbsp;razítka |
-|---|---|---|
-| sobota 24.&nbsp;října 2026, 21:36 | `predikce/bratislava-primator/zivy-odhad-2026-10-24_2136/odhady.json` | `razitka/bratislava-primator/zivy-odhad-2026-10-24_2136/` |
+| Verze | Použité údaje | Soubor | Seznam otisků a&nbsp;razítka |
+|---|---|---|---|
+| neděle 25.&nbsp;října 2026, 1:28 | stav k&nbsp;1:10, kdy bylo sečteno 30,9&nbsp;% okrsků | `predikce/bratislava-primator/zivy-odhad-2026-10-25_0128/odhady.json` | `razitka/bratislava-primator/zivy-odhad-2026-10-25_0128/` |
+| sobota 24.&nbsp;října 2026, 21:36 | stav k&nbsp;21:30, kdy průběžné výsledky sčítání ještě nebyly k&nbsp;dispozici | `predikce/bratislava-primator/zivy-odhad-2026-10-24_2136/odhady.json` | `razitka/bratislava-primator/zivy-odhad-2026-10-24_2136/` |
 
-Hlavní živý odhad Simczech Original&nbsp;👑:
+Hlavní živý odhad Simczech Original&nbsp;👑 v&nbsp;poslední verzi (1:28):
 
 | Kandidát | Podíl platných hlasů | Rozmezí (80&nbsp;%) | Šance na zvolení |
 |---|---|---|---|
-| Matúš Vallo | 60,7&nbsp;% | 56,1–65,2&nbsp;% | &gt;&nbsp;99&nbsp;% |
-| Jozef Ráž | 35,2&nbsp;% | 30,8–39,6&nbsp;% | &lt;&nbsp;1&nbsp;% |
-| Zuzana Šubová | 2,6&nbsp;% | 1,7–3,8&nbsp;% | 0&nbsp;% |
-| Ľubomír Geci | 1,5&nbsp;% | 0,9–2,2&nbsp;% | 0&nbsp;% |
+| Matúš Vallo | 63,5&nbsp;% | 61,5–65,6&nbsp;% | &gt;&nbsp;99&nbsp;% |
 
-Ve stejném souboru jsou další dva živé odhady: Simczech Kumquat a&nbsp;Simczech Mangaba. Položky mají stejný význam jako u&nbsp;odhadů výše. Navíc `asOf` udává čas, k&nbsp;němuž se vztahují použité údaje, a&nbsp;`countedPct` podíl sečtených okrsků v&nbsp;procentech.
+Novější verze odhaduje jen podíl hlasů Matúše Valla. Vývoj všech živých odhadů je na [simczech.cz/slovensko/2026/bratislava](https://simczech.cz/slovensko/2026/bratislava).
 
-Ověření:
+Starší verze tu zůstává. V&nbsp;souboru každé verze jsou další dva živé odhady: Simczech Kumquat a&nbsp;Simczech Mangaba. Položky mají stejný význam jako u&nbsp;odhadů výše. Navíc `asOf` udává čas, k&nbsp;němuž se vztahují použité údaje, a&nbsp;`countedPct` podíl sečtených okrsků v&nbsp;procentech.
+
+Ověření poslední verze:
 
 ```sh
-cd predikce/bratislava-primator/zivy-odhad-2026-10-24_2136
-shasum -a 256 -c ../../../razitka/bratislava-primator/zivy-odhad-2026-10-24_2136/SHA256SUMS
-openssl ts -reply -in ../../../razitka/bratislava-primator/zivy-odhad-2026-10-24_2136/SHA256SUMS.digicert.tsr -text
+cd predikce/bratislava-primator/zivy-odhad-2026-10-25_0128
+shasum -a 256 -c ../../../razitka/bratislava-primator/zivy-odhad-2026-10-25_0128/SHA256SUMS
+openssl ts -reply -in ../../../razitka/bratislava-primator/zivy-odhad-2026-10-25_0128/SHA256SUMS.digicert.tsr -text
 ```
 
 ## Senát, 2. kolo (16. a&nbsp;17.&nbsp;října 2026)

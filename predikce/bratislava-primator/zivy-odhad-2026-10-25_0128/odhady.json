@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "kind": "zivy-odhad",
+  "election": "Voľba primátora hlavného mesta Slovenskej republiky Bratislavy, 24. 10. 2026",
+  "generatedAt": "2026-10-25T01:28:36+02:00",
+  "asOf": "01:10",
+  "countedPct": 30.92,
+  "note": "Živý odhad konečného výsledku vytvořený během sčítání hlasů. Vychází i z exit pollu a z průběžných výsledků sčítání; nejde o predikci. Odhaduje jen podíl hlasů Matúše Valla.",
+  "main": "original",
+  "candidates": [
+    {
+      "name": "Matúš Vallo"
+    }
+  ],
+  "methods": {
+    "original": {
+      "name": "Simczech Original 👑",
+      "candidates": {
+        "Matúš Vallo": {
+          "share": 63.5,
+          "low": 61.5,
+          "high": 65.6,
+          "win": 1.0
+        }
+      }
+    },
+    "kumquat": {
+      "name": "Simczech Kumquat",
+      "candidates": {
+        "Matúš Vallo": {
+          "share": 63.7,
+          "low": 61.4,
+          "high": 66.1,
+          "win": 1.0
+        }
+      }
+    },
+    "mangaba": {
+      "name": "Simczech Mangaba",
+      "candidates": {
+        "Matúš Vallo": {
+          "share": 63.3,
+          "low": 61.5,
+          "high": 65.1,
+          "win": 1.0
+        }
+      }
+    }
+  },
+  "actual": null
+}
