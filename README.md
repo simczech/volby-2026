@@ -45,6 +45,33 @@ shasum -a 256 -c ../../../razitka/bratislava-primator/2026-10-24_2102/SHA256SUMS
 openssl ts -reply -in ../../../razitka/bratislava-primator/2026-10-24_2102/SHA256SUMS.digicert.tsr -text
 ```
 
+### Živý odhad konečného výsledku (sobota 24.&nbsp;října 2026, 21:36)
+
+Živý odhad vznikl během sčítání hlasů a&nbsp;na rozdíl od odhadů výše vychází i&nbsp;z&nbsp;exit pollu; nejde tedy o&nbsp;predikci. Použité údaje odpovídají stavu k&nbsp;21:30; průběžné výsledky sčítání ještě nebyly k&nbsp;dispozici. Časová razítka dokládají, že soubor existoval už v&nbsp;čase, který je na nich uveden.
+
+| Verze | Soubor | Seznam otisků a&nbsp;razítka |
+|---|---|---|
+| sobota 24.&nbsp;října 2026, 21:36 | `predikce/bratislava-primator/zivy-odhad-2026-10-24_2136/odhady.json` | `razitka/bratislava-primator/zivy-odhad-2026-10-24_2136/` |
+
+Hlavní živý odhad Simczech Original&nbsp;👑:
+
+| Kandidát | Podíl platných hlasů | Rozmezí (80&nbsp;%) | Šance na zvolení |
+|---|---|---|---|
+| Matúš Vallo | 60,7&nbsp;% | 56,1–65,2&nbsp;% | &gt;&nbsp;99&nbsp;% |
+| Jozef Ráž | 35,2&nbsp;% | 30,8–39,6&nbsp;% | &lt;&nbsp;1&nbsp;% |
+| Zuzana Šubová | 2,6&nbsp;% | 1,7–3,8&nbsp;% | 0&nbsp;% |
+| Ľubomír Geci | 1,5&nbsp;% | 0,9–2,2&nbsp;% | 0&nbsp;% |
+
+Ve stejném souboru jsou další dva živé odhady: Simczech Kumquat a&nbsp;Simczech Mangaba. Položky mají stejný význam jako u&nbsp;odhadů výše. Navíc `asOf` udává čas, k&nbsp;němuž se vztahují použité údaje, a&nbsp;`countedPct` podíl sečtených okrsků v&nbsp;procentech.
+
+Ověření:
+
+```sh
+cd predikce/bratislava-primator/zivy-odhad-2026-10-24_2136
+shasum -a 256 -c ../../../razitka/bratislava-primator/zivy-odhad-2026-10-24_2136/SHA256SUMS
+openssl ts -reply -in ../../../razitka/bratislava-primator/zivy-odhad-2026-10-24_2136/SHA256SUMS.digicert.tsr -text
+```
+
 ## Senát, 2. kolo (16. a&nbsp;17.&nbsp;října 2026)
 
 Odhad druhého kola senátních voleb ve 22 obvodech, ve kterých se o&nbsp;senátorovi rozhoduje ve druhém kole. Každá verze je jeden soubor `runoff.json` s&nbsp;vlastním seznamem otisků a&nbsp;časovými razítky.

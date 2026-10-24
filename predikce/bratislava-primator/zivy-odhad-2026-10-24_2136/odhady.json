@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "kind": "zivy-odhad",
+  "election": "Voľba primátora hlavného mesta Slovenskej republiky Bratislavy, 24. 10. 2026",
+  "generatedAt": "2026-10-24T21:36:25+02:00",
+  "asOf": "21:30",
+  "countedPct": null,
+  "note": "Živý odhad konečného výsledku vytvořený během sčítání hlasů. Vychází i z exit pollu; průběžné výsledky sčítání ještě nebyly k dispozici. Nejde o predikci.",
+  "main": "original",
+  "candidates": [
+    {
+      "name": "Matúš Vallo"
+    },
+    {
+      "name": "Jozef Ráž"
+    },
+    {
+      "name": "Zuzana Šubová"
+    },
+    {
+      "name": "Ľubomír Geci"
+    }
+  ],
+  "methods": {
+    "original": {
+      "name": "Simczech Original 👑",
+      "candidates": {
+        "Matúš Vallo": {
+          "share": 60.7,
+          "low": 56.1,
+          "high": 65.2,
+          "win": 0.996
+        },
+        "Jozef Ráž": {
+          "share": 35.2,
+          "low": 30.8,
+          "high": 39.6,
+          "win": 0.004
+        },
+        "Zuzana Šubová": {
+          "share": 2.6,
+          "low": 1.7,
+          "high": 3.8,
+          "win": 0.0
+        },
+        "Ľubomír Geci": {
+          "share": 1.5,
+          "low": 0.9,
+          "high": 2.2,
+          "win": 0.0
+        }
+      }
+    },
+    "kumquat": {
+      "name": "Simczech Kumquat",
+      "candidates": {
+        "Matúš Vallo": {
+          "share": 61.0,
+          "low": 56.6,
+          "high": 65.4,
+          "win": 0.997
+        },
+        "Jozef Ráž": {
+          "share": 35.2,
+          "low": 30.9,
+          "high": 39.3,
+          "win": 0.003
+        },
+        "Zuzana Šubová": {
+          "share": 2.4,
+          "low": 1.6,
+          "high": 3.5,
+          "win": 0.0
+        },
+        "Ľubomír Geci": {
+          "share": 1.4,
+          "low": 0.9,
+          "high": 2.1,
+          "win": 0.0
+        }
+      }
+    },
+    "mangaba": {
+      "name": "Simczech Mangaba",
+      "candidates": {
+        "Matúš Vallo": {
+          "share": 60.3,
+          "low": 55.6,
+          "high": 65.0,
+          "win": 0.996
+        },
+        "Jozef Ráž": {
+          "share": 35.3,
+          "low": 30.6,
+          "high": 40.0,
+          "win": 0.004
+        },
+        "Zuzana Šubová": {
+          "share": 2.8,
+          "low": 1.8,
+          "high": 3.9,
+          "win": 0.0
+        },
+        "Ľubomír Geci": {
+          "share": 1.6,
+          "low": 0.9,
+          "high": 2.3,
+          "win": 0.0
+        }
+      }
+    }
+  },
+  "actual": null
+}
